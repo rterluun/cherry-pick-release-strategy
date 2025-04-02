@@ -1,0 +1,15 @@
+---
+name: Main Branch Workflow
+on:
+  push: # Trigger the workflow on push to develop branch
+    branches:
+      - main
+  workflow_dispatch: # Trigger the workflow manually
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy
+      run: |
+        echo "Triggers a deployment to the production environment"
