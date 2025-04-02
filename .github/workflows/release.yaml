@@ -1,0 +1,15 @@
+---
+name: Release Branch Workflow
+on:
+  pull_request: # Trigger the workflow on pull request to main branch
+    branches:
+      - main
+  workflow_dispatch: # Trigger the workflow manually
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy
+      run: |
+        echo "Triggers a deployment to the acceptance environment"
