@@ -3,7 +3,7 @@ name: Release Branch Workflow
 on:
   pull_request: # Trigger the workflow on pull request to main branch
     branches:
-      - main
+      - main # Should not use squash and merge
   workflow_dispatch: # Trigger the workflow manually
 
 jobs:
