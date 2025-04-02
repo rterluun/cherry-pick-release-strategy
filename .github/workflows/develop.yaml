@@ -4,14 +4,10 @@ on:
   push: # Trigger the workflow on push to develop branch
     branches:
       - develop # should be the default branch in your repository
-      # Conditions:
-      # Require a pull request before merging
-      # Lock branch
-      # Require conversation resolution before merging
   workflow_dispatch: # Trigger the workflow manually
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Deploy

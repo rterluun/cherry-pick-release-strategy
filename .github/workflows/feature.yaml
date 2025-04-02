@@ -7,7 +7,7 @@ on:
   workflow_dispatch: # Trigger the workflow manually
 
 jobs:
-  build:
+  build_validate:
     runs-on: ubuntu-latest
     steps:
     - name: Build
