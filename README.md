@@ -5,7 +5,7 @@ This repository contains a simple example of how to use the cherry-pick release 
 ## Create a new feature branch
 
 ```bash
-git checkout -b DATA-1234-my-feature origin/develop
+git checkout -b DATA-1234-my-feature # develop should be the base branch
 ```
 
 ## Make some changes
