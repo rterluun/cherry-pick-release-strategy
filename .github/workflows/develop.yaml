@@ -11,7 +11,7 @@ on:
   workflow_dispatch: # Trigger the workflow manually
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Deploy
