@@ -6,6 +6,7 @@ This repository contains a simple example of how to use the cherry-pick release 
 
 ```bash
 git checkout -b DATA-1234-my-feature develop # develop should be the base branch
+git push --set-upstream origin DATA-1234-my-feature
 ```
 
 ## Pull request the feature branch to the develop branch
@@ -34,6 +35,6 @@ The develop branch should be updated with the changes from the main branch, so t
 
 ```bash
 git checkout develop
-git rebase --reapply-cherry-picks --strategy-option=ours main
+git rebase --reapply-cherry-picks --strategy-option=ours origin/main
 git push --force
 ```
