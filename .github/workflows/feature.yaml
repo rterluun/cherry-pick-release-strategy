@@ -1,5 +1,5 @@
 ---
-name: Build and Validation
+name: Feature Branch Workflow
 on:
   pull_request: # Trigger the workflow on pull request to develop branch
     branches:
@@ -19,3 +19,6 @@ jobs:
     - name: Test
       run: |
         echo "Triggers unit tests"
+    - name: Deploy
+      run: |
+        echo "Triggers a deployment to the feature environment"
