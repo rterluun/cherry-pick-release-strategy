@@ -27,6 +27,7 @@ git cherry-pick 192274f23abf0aeaadab4bd6b1981c4bec1935f8 # a commit from the dev
 The workflows file `.github/workflows/release.yaml` is triggered when a PR is created to the main branch.
 This releases the changes to the acceptance environment.
 The workflow file `.github/workflows/main.yaml` is triggered when the main branch is updated and deploys the changes to the production environment.
+Merge strategy: rebase and merge.
 
 ## Update the develop branch with the main branch
 The develop branch should be updated with the changes from the main branch, so that released features are synchronized with the develop branch and un-released features are available for the next release.
