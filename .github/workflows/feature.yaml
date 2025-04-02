@@ -1,0 +1,21 @@
+---
+name: Build and Validation
+on:
+  pull_request: # Trigger the workflow on pull request to develop branch
+    branches:
+      - develop # should be the default branch in your repository
+  workflow_dispatch: # Trigger the workflow manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build
+      run: |
+        echo "Triggers a build"
+    - name: Validate
+      run: |
+        echo "Triggers a validation with code linting"
+    - name: Test
+      run: |
+        echo "Triggers unit tests"
