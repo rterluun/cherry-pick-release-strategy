@@ -17,10 +17,10 @@ Or the workflow can be triggered manually, to verify the deployment of your chan
 
 The feature branch is merged to the develop branch using a PR.
 
-## Cherry-pick the feature branch to the release branch
+## Cherry-pick the develop branch to the release branch
 
 ```bash
-git checkout -b release/1.0 main # main should be the base branch
+git checkout -b release/1.0 # main should be the base branch
 git cherry-pick <commit-hash>
 ```
 
